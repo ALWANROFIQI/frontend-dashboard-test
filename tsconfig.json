@@ -18,10 +18,14 @@
         "name": "next"
       }
     ],
+
+    // ✅ Tambahkan alias di sini
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["*"]
     }
   },
+
   "include": [
     "next-env.d.ts",
     "**/*.ts",
