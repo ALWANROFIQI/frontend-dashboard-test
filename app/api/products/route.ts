@@ -6,7 +6,7 @@ const EXTERNAL = process.env.EXTERNAL_API_BASE;
 export async function GET(req: Request) {
   try {
     if (!EXTERNAL) {
-      console.error('❌ Missing EXTERNAL_API_BASE in .env.local');
+      console.error(' Missing EXTERNAL_API_BASE in .env.local');
       return NextResponse.json({ error: 'Backend URL not configured' }, { status: 500 });
     }
 

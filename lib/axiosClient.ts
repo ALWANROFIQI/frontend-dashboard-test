@@ -1,8 +1,7 @@
-// lib/axiosClient.ts
 import axios from 'axios';
 
 export const axiosClient = axios.create({
-  baseURL: '/api', // semua request otomatis diarahkan ke /api/*
+  baseURL: '/api',
   headers: {
     'Content-Type': 'application/json',
   },

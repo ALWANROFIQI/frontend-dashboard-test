@@ -1,17 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import {
-  Table,
-  Button,
-  Input,
-  Pagination,
-  Modal,
-  Form,
-  message,
-  Space,
-  Typography,
-} from 'antd';
+import {Table,Button,Input,Pagination,Modal,Form,message,Space,Typography,} from 'antd';
 import type { Product } from '@/types/product';
 import { axiosClient } from '@/lib/axiosClient';
 

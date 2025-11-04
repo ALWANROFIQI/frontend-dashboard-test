@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import ClientLayout from './ClientLayout'; // ✅ tambahkan ini
+import ClientLayout from './ClientLayout';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {/* ✅ Bungkus seluruh aplikasi dengan layout client */}
+        {}
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
